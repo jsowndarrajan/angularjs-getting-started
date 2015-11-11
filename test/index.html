@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Mocha Spec Runner - Phone Book</title>
+    <script src="scripts/angular/angular.js"></script>
+    <link rel="stylesheet" href="scripts/mocha/mocha.css"/>
+</head>
+<body ng-controller="phoneBookCtrl">
+    <div id="mocha"></div>
+    <script src="scripts/mocha/mocha.js"></script>
+    <script src="scripts/chai/chai.js"></script>
+    <script>
+        mocha.setup('bdd');
+    </script>   
+    <script src="main.js"></script>
+    <script src="main.spec.js"></script>
+    <script>
+        mocha.run();
+    </script>
+</body>
+</html>
